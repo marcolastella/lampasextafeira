@@ -50,10 +50,20 @@
         "url": "https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700"
       }
     ],
-    "uniqCompNum": 10,
+    "uniqCompNum": 11,
     "versionPublish": "5.9.6",
     "imageResize": true,
-    "screenshot": "screenshot.png"
+    "screenshot": "screenshot.png",
+    "usedWebp": true,
+    "favicon": false,
+    "mbrsiteDomain": "jht4egebfi",
+    "robotsSwitcher": false,
+    "sitemapSwitcher": false,
+    "sitemapSwitcherAuto": false,
+    "siteUrl": false,
+    "cookiesAlert": false,
+    "gdpr": false,
+    "publishChangesOnly": true
   },
   "pages": {
     "index.html": {
