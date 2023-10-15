@@ -1,7 +1,7 @@
 {
   "settings": {
     "name": "Lampa Sexta Feira",
-    "currentPage": "index.html",
+    "currentPage": "lampasextafeira-de.html",
     "theme": {
       "name": "startm5",
       "title": "StartM5",
@@ -50,7 +50,7 @@
         "url": "https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700"
       }
     ],
-    "uniqCompNum": 13,
+    "uniqCompNum": 24,
     "versionPublish": "5.9.6",
     "imageResize": true,
     "screenshot": "screenshot.png",
@@ -629,11 +629,11 @@
           "_sourceTheme": "startm5",
           "_customHTML": "<section data-bs-version=\"5.1\" class=\"article16\" group=\"Article\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"2\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"3\">\n        <input type=\"range\" name=\"textWidth\" title=\"Width\" min=\"4\" max=\"12\" value=\"10\" step=\"1\">\n        <header>Background</header>\n        <input type=\"color\" title=\"Color\" name=\"bgColor\" value=\"#232323\">\n    </mbr-parameters>\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"row justify-content-center\">\n            <div class=\"col-md-12 col-lg-{{textWidth}}\">\n                <div class=\"mbr-section-btn align-center\" mbr-buttons mbr-theme-style=\"display-4\" data-toolbar=\"-mbrBtnMove\"><a class=\"btn btn-danger\" href=\"https://drive.google.com/drive/folders/1-J6ZRVomowSEFU5mCc129gKwVauUQTuR?usp=sharing\" data-app-placeholder=\"Type Text\" target=\"_blank\"><span class=\"mobi-mbri mobi-mbri-download mbr-iconfont mbr-iconfont-btn\"></span>Scarica Media Kit</a></div>\n            </div>\n        </div>\n    </div>\n</section>",
           "_cid": "tSI8I71GG8",
+          "_anchor": "article16-c",
           "_protectedParams": [],
           "_global": false,
           "_once": false,
-          "_params": {},
-          "_anchor": "article16-c"
+          "_params": {}
         },
         {
           "alias": false,
@@ -762,6 +762,709 @@
           "_customHTML": "<section data-bs-version=\"5.1\" class=\"contacts01\" group=\"Contacts\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\" checked>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"4\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"6\">\n        <select title=\"Columns\" name=\"cardsWidth\">\n\t\t\t<option value=\"6\" selected>2</option>\n\t\t\t<option value=\"4\">3</option>\n\t\t\t<option value=\"3\">4</option>\n\t\t</select>\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\">\n        <header>Cards</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitleCards\" checked>\n        <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n        <input type=\"color\" title=\"BG\" name=\"cardsBg\" value=\"#232323\">\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Image\" value=\"../_images/background1.jpg\" parallax>\n            <input type=\"color\" title=\"Color\" value=\"#0d0d0d\" selected>\n            <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n        </fieldset>\n        <header condition=\"bg.type === 'video'\">Fallback Image</header>\n        <input type=\"image\" title=\"Fallback Image\" value=\"../_images/background1.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" checked condition=\"bg.type !== 'color'\">\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#cebfaf\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.5\" condition=\"overlay && bg.type !== 'color'\">\n    </mbr-parameters>\n\n    <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"row justify-content-center\">\n            <div class=\"col-12 content-head\">\n                <div class=\"mbr-section-head mb-5\" mbr-if=\"showTitle || showSubtitle\">\n                    <h3 class=\"mbr-section-title mbr-fonts-style align-center mb-0\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\">\n                        <b>Contattaci</b></h3>\n                    <h4 class=\"mbr-section-subtitle mbr-fonts-style align-center mb-0 mt-4\" mbr-theme-style=\"display-7\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\">\n                        Contacts Subtitle\n                    </h4>\n                </div>\n            </div>\n        </div>\n        <div class=\"row\">\n            <div class=\"item features-without-image col-12 col-md-{{cardsWidth}} active\">\n                <div class=\"item-wrapper\">\n                    <div class=\"text-wrapper\">\n                        <h6 class=\"card-title mbr-fonts-style mb-3\" mbr-theme-style=\"display-5\" data-app-selector=\".card-title\" mbr-if=\"showTitleCards\">\n                            <b>Telefono</b></h6>\n                        <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\"><a href=\"https://wa.me/44 77 494 65 34\" class=\"text-primary\">+44 77 494 65 34</a></p>\n                    </div>\n                </div>\n            </div>\n            <div class=\"item features-without-image col-12 col-md-{{cardsWidth}}\">\n                <div class=\"item-wrapper\">\n                    <div class=\"text-wrapper\">\n                        <h6 class=\"card-title mbr-fonts-style mb-3\" mbr-theme-style=\"display-5\" data-app-selector=\".card-title\" mbr-if=\"showTitleCards\">\n                            <b>Email</b>\n                        </h6>\n                        <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\"><a href=\"mailto:dom.lampa.music@gmail.com\" class=\"text-primary\">dom.lampa.music@gmail.com</a></p>\n                    </div>\n                </div>\n            </div>\n            <div class=\"item features-without-image col-12 col-md-{{cardsWidth}}\">\n                <div class=\"item-wrapper\">\n                    <div class=\"text-wrapper\">\n                        <h6 class=\"card-title mbr-fonts-style mb-3\" mbr-theme-style=\"display-5\" data-app-selector=\".card-title\" mbr-if=\"showTitleCards\">\n                            <b>Location</b></h6>\n                        <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\">\n                            Lugano, TI - Svizzera (CH)</p>\n                    </div>\n                </div>\n            </div>\n            <div class=\"item features-without-image col-12 col-md-{{cardsWidth}}\">\n                <div class=\"item-wrapper\">\n                    <div class=\"text-wrapper\">\n                        <h6 class=\"card-title mbr-fonts-style mb-3\" mbr-theme-style=\"display-5\" data-app-selector=\".card-title\" mbr-if=\"showTitleCards\">\n                            <b>Orari di contatto</b></h6>\n                        <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\">10:00 - 18:00\n                        </p>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
           "_cid": "tSHJTFJaHj",
           "_anchor": "contacts01-9",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        }
+      ]
+    },
+    "lampasextafeira-de.html": {
+      "settings": {
+        "title": "Lampa Sexta Feira - DE",
+        "meta_descr": "",
+        "header_custom": "",
+        "footer_custom": "",
+        "html_before": "",
+        "order": "1"
+      },
+      "components": [
+        {
+          "alias": false,
+          "_styles": {
+            "display": "flex",
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 15px)",
+              "padding-bottom": "(@paddingBottom * 15px)"
+            },
+            "& when (@bg-type = \"color\")": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = \"image\")": {
+              "background-image": "url(@bg-value)",
+              ".mbr-overlay": {
+                "background-color": "@overlayColor",
+                "opacity": "@overlayOpacity"
+              }
+            },
+            ".content-wrap": {
+              "padding": "5rem 1rem"
+            },
+            "@media (min-width: 768px)": {
+              "align-items": "~\"@{verticalAlign}\"",
+              ".row": {
+                "justify-content": "~\"@{horizontalAlign}\""
+              }
+            },
+            "@media (max-width: 991px) and (min-width: 768px)": {
+              ".content-wrap": {
+                "min-width": "50%"
+              }
+            },
+            "@media (max-width: 767px)": {
+              "-webkit-align-items": "center",
+              "align-items": "center",
+              ".mbr-row": {
+                "-webkit-justify-content": "center",
+                "justify-content": "center"
+              },
+              ".content-wrap": {
+                "width": "100%"
+              }
+            },
+            ".mbr-section-title": {
+              "text-align": "center"
+            },
+            ".mbr-text, .mbr-section-btn": {
+              "text-align": "center"
+            }
+          },
+          "_name": "header09",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"header09\" group=\"Headers\" mbr-class=\"{'mbr-fullscreen': fullScreen,\n'mbr-parallax-background': bg.parallax}\">\n\t<mbr-parameters>\n\t\t<header>Size</header>\n\t\t<input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n\t\t<input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n\t\t<input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"12\" step=\"1\" value=\"5\" condition=\"fullScreen == false\">\n\t\t<input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"12\" step=\"1\" value=\"0\" condition=\"fullScreen == false\">\n\t\t<input type=\"range\" inline name=\"contentWidth\" title=\"Content Width\" min=\"4\" max=\"12\" step=\"1\" value=\"8\">\n\t\t<header>Show / Hide</header>\n\t\t<input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n\t\t<input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\">\n\t\t<input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n\t\t<input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\">\n\t\t<select title=\"Vertical Align\" name=\"verticalAlign\" condition=\"fullScreen\">\n\t\t\t<option value=\"flex-start\">Top</option>\n\t\t\t<option value=\"center\" selected>Center</option>\n\t\t\t<option value=\"flex-end\">Bottom</option>\n\t\t</select>\n\t\t<select title=\"Horizontal Align\" name=\"horizontalAlign\">\n\t\t\t<option value=\"flex-start\">Left</option>\n\t\t\t<option value=\"center\" selected>Center</option>\n\t\t\t<option value=\"flex-end\">Right</option>\n\t\t</select>\n\t\t<header>Background</header>\n\t\t<fieldset type=\"background\" name=\"bg\" parallax>\n\t\t\t<input type=\"image\" title=\"Image\" value=\"@PROJECT_PATH@/assets/images/lampa-21.jpg\" selected parallax>\n\t\t\t<input type=\"color\" title=\"Color\" value=\"#393193\">\n\t\t</fieldset>\n\n\t\t<input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type!='color'\" checked>\n\t\t<input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#000000\" condition=\"bg.type!='color' && overlay\">\n\t\t<input type=\"range\" inline title=\"Overlay Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.7\" condition=\"bg.type!='color' && overlay\">\n\t</mbr-parameters>\n\t<div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\"></div>\n\t<div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n\t\t<div class=\"row\">\n\t\t\t<div class=\"content-wrap col-12 col-md-{{contentWidth}}\">\n\t\t\t\t<h1 class=\"mbr-section-title mbr-fonts-style mbr-white mb-4\" mbr-theme-style=\"display-1\" data-app-selector=\".mbr-section-title\" mbr-if=\"showTitle\">\n\t\t\t\t\t<b>Lampa </b><br><b>Sexta Feira</b></h1>\n\t\t\t\t<h2 class=\"mbr-section-title mbr-fonts-style mbr-white mb-4\" data-app-selector=\".mbr-section-title\" mbr-theme-style=\"display-2\" mbr-if=\"showSubtitle\">\n\t\t\t\t\tHeader Subtitle\n\t\t\t\t</h2>\n\t\t\t\t<p class=\"mbr-fonts-style mbr-text mbr-white mb-4\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">\n\t\t\t\t\tReggae, Rap &amp; Roots <br>Brazilian Music\n\t\t\t\t</p>\n\t\t\t\t<div class=\"mbr-section-btn\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\" mbr-buttons mbr-theme-style=\"display-7\">\n\t\t\t\t\t<a class=\"btn btn-danger\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\">Learn more</a>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</section>",
+          "_cid": "tSKwHao79G",
+          "_anchor": "header09-d",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 1rem)",
+              "padding-bottom": "(@paddingBottom * 1rem)"
+            },
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            ".mbr-fallback-image.disabled": {
+              "display": "none"
+            },
+            ".mbr-fallback-image": {
+              "display": "block",
+              "background-size": "cover",
+              "background-position": "center center",
+              "width": "100%",
+              "height": "100%",
+              "position": "absolute",
+              "top": "0",
+              "& when (@bg-type = 'video')": {
+                "background-image": "url(@fallBackImage)"
+              }
+            },
+            "& when (@reverseContent)": {
+              ".row": {
+                "flex-direction": "row-reverse"
+              }
+            },
+            "@media (max-width: 992px)": {
+              ".mbr-figure": {
+                "margin-top": "1.5rem"
+              }
+            },
+            ".row": {
+              "align-items": "center"
+            },
+            ".text-wrapper": {
+              "@media (min-width: 992px)": {
+                "padding": "0 2rem"
+              }
+            },
+            ".media-content, .mbr-figure": {
+              "align-self": "center"
+            },
+            ".mbr-figure iframe": {
+              "width": "100%",
+              "border-radius": "2rem",
+              "overflow": "hidden"
+            },
+            ".mbr-figure": {
+              "border-radius": "0rem",
+              "overflow": "hidden",
+              "@media (min-width: 767px)": {
+                "border-radius": "2rem"
+              }
+            },
+            ".mbr-section-title": {
+              "color": "#ffffff"
+            },
+            ".mbr-text, .mbr-section-btn": {
+              "color": "#f7f7f7"
+            }
+          },
+          "_name": "header04",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"header4\" group=\"Headers\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-fullscreen': fullScreen,\n                    'mbr-parallax-background': bg.parallax}\">\n\t<mbr-parameters>\n\t\t<header>Size</header>\n\t\t<input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n\t\t<input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\" checked>\n\t\t<input type=\"checkbox\" title=\"Reverse\" name=\"reverseContent\">\n\t\t<input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"12\" step=\"1\" value=\"6\" condition=\"fullScreen == false\">\n\t\t<input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"12\" step=\"1\" value=\"6\" condition=\"fullScreen == false\">\n\t\t<input type=\"range\" inline name=\"videoWidth\" title=\"Video\" min=\"4\" max=\"8\" step=\"1\" value=\"8\">\n\t\t<header>Show/Hide</header>\n\t\t<input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n\t\t<input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n\t\t<input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\">\n\t\t<header>Background</header>\n\t\t<fieldset type=\"background\" name=\"bg\" parallax>\n\t\t\t<input type=\"image\" title=\"Image\" value=\"@PROJECT_PATH@/assets/images/lampa-19-2000x1333.jpg\" parallax selected>\n\t\t\t<input type=\"color\" title=\"Color\" value=\"#edefeb\">\n\t\t\t<input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n\t\t</fieldset>\n\t\t<header condition=\"bg.type === 'video'\">Fallback Image</header>\n\t\t<input type=\"image\" title=\"Fallback Image\" value=\"../_images/background1.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n\t\t<input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n\t\t<input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#000000\" condition=\"overlay && bg.type !== 'color'\">\n\t\t<input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.7\" condition=\"overlay && bg.type !== 'color'\">\n\t</mbr-parameters>\n\n\t<div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n\t<div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\"></div>\n\n\t<div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n\t\t<div class=\"row justify-content-center\">\n\t\t\t<div class=\"col-12 col-md\">\n\t\t\t\t<div class=\"text-wrapper\">\n\t\t\t\t\t<h2 class=\"mbr-section-title mb-4 mbr-fonts-style\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\"><b>Brasilianische Live-Musik</b></h2>\n\t\t\t\t\t<p class=\"mbr-text mb-4 mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">Sexta Feira ist ein außergewöhnliches Musiktrio, das von Reggae, Samba, Forró bis hin zu Funky und Roots-Musik reicht<br><br>Dom Lampa (Gitarre &amp; Gesang)<br>Marco Lastella (Bass)<br>Daniele Bagutti (Schlagzeug)&nbsp;</p>\n\t\t\t\t\t<div class=\"mbr-section-btn mb-4\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\" mbr-buttons mbr-theme-style=\"display-7\">\n\t\t\t\t\t\t<a class=\"btn btn-primary\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\">Learn more</a>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t\t<div mbr-video class=\"mbr-figure col-12 col-md-{{videoWidth}}\">\n\t\t\t\t<iframe src=\"https://vimeo.com/874428222?loop=1&autoplay=1\"></iframe>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</section>",
+          "_cid": "tSKwHbJVXC",
+          "_anchor": "header04-e",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 1rem)",
+            "padding-bottom": "(@paddingBottom * 1rem)",
+            "background-color": "@bgColor",
+            ".mbr-text": {
+              "color": "#ffffff"
+            },
+            ".mbr-section-subtitle": {
+              "color": "#000000"
+            },
+            ".mbr-section-title": {
+              "color": "#ffffff"
+            }
+          },
+          "_name": "article12",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"article12\" group=\"Article\">    \n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"5\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"5\">\n        <input type=\"range\" name=\"textWidth\" title=\"Width\" min=\"4\" max=\"12\" value=\"10\" step=\"1\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\">\n        <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n        <header>Background</header>\n        <input type=\"color\" title=\"Color\" name=\"bgColor\" value=\"#000000\">\n    </mbr-parameters>\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"row justify-content-center\">\n            <div class=\"col-md-12 col-lg-{{textWidth}}\">\n                <h3 class=\"mbr-section-title mbr-fonts-style mb-4 mt-0\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\" mbr-theme-style=\"display-2\"><b>Wer ist Dom Lampa?</b></h3>\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-4\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\">The storytelling magic of photos\n                </h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-if=\"showText\" data-app-selector=\".mbr-text\" mbr-theme-style=\"display-7\">Dom Lampa ist eine der unverwechselbarsten Stimmen in der heutigen brasilianischen Ragga/Rap/Reggae-Szene. Mit seiner warmen Stimme, starken Melodien und Vielseitigkeit bewegt sich Dom Lampa mühelos in der brasilianischen Musik (Forró, Samba, Bossa Nova), lateinamerikanischen Musik (Cumbia, Milonga, Chicha) und Jazz/Funky/Soul.<br><br>Nach dutzenden von Projekten in Brasilien und Europa im Laufe seiner Karriere lebt Dom Lampa seit 6 Jahren in Tessin, Schweiz, wo er Konzerte, Workshops und Musikstudioschulen gibt. Dom Lampa ist Sänger, MC, Produzent, Komponist, Performer und Singjay.<br></p>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "tSKwHiAqhW",
+          "_anchor": "article12-f",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": "soundcloud",
+          "_isSecondary": true,
+          "typeCompatible": "!isAMP",
+          "_styles": {},
+          "_name": "soundcloud1",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<iframe width=\"100%\" height=\"300\" scrolling=\"no\" frameborder=\"no\" allow=\"autoplay\" src=\"https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1705195356%3Fsecret_token%3Ds-8Qk2McE52Z1&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true\"></iframe><div style=\"font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;\"><a href=\"https://soundcloud.com/marcolastella\" title=\"Marco Lastella\" target=\"_blank\" style=\"color: #cccccc; text-decoration: none;\">Marco Lastella</a> · <a href=\"https://soundcloud.com/marcolastella/sets/lampa-sexta-feira\" title=\"Lampa Sexta Feira\" target=\"_blank\" style=\"color: #cccccc; text-decoration: none;\">Lampa Sexta Feira</a></div>",
+          "_PHPplaceholders": [],
+          "_JSplaceholders": [],
+          "_cid": "tSKwHiSIno",
+          "_anchor": "soundcloud1-g",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 1rem)",
+            "padding-bottom": "(@paddingBottom * 1rem)",
+            "background-color": "@bgColor",
+            ".mbr-text": {
+              "color": "#ffffff",
+              "text-align": "left"
+            },
+            ".mbr-section-subtitle": {
+              "color": "#000000"
+            },
+            ".mbr-section-title": {
+              "color": "#ffffff"
+            }
+          },
+          "_name": "article12",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"article12\" group=\"Article\">    \n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"5\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"5\">\n        <input type=\"range\" name=\"textWidth\" title=\"Width\" min=\"4\" max=\"12\" value=\"10\" step=\"1\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\">\n        <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n        <header>Background</header>\n        <input type=\"color\" title=\"Color\" name=\"bgColor\" value=\"#000000\">\n    </mbr-parameters>\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"row justify-content-center\">\n            <div class=\"col-md-12 col-lg-{{textWidth}}\">\n                <h3 class=\"mbr-section-title mbr-fonts-style mb-4 mt-0\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\" mbr-theme-style=\"display-2\">\n                <b>Biografie</b></h3>\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-4\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\">The storytelling magic of photos\n                </h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-if=\"showText\" data-app-selector=\".mbr-text\" mbr-theme-style=\"display-7\">Geboren und aufgewachsen in der Vorstadt von São Paulo (Brasilien), begann Dom Lampa im Jahr 1997 seine Karriere in der Rap-Gruppe Julgados Culpados, die in der Untergrundszene von São Paulo bekannt wurde und in Programmen wie Yo MTV Raps und Radiola TV Culture Geschichte schrieb, einem Programm, das vom Sohn von Elis Regina betreut wurde.<br><br>Anfang der 2000er Jahre wurde er Sänger in der Reggaeband Usina Reggae und wurde mit dem Hit \"A Mulher e o Lago\" zu einem Star, einem Klassiker des brasilianischen Reggae.<br><br>Im Jahr 2002 wurde er eingeladen, ein Album mit der Band Orbitais auf dem Label Arsenal/Sony Music aufzunehmen, produziert vom berühmten Produzenten Rick Bonadio. Dort begann er, das ganze Brasilien zu bereisen und trat mit renommierten Bands wie Natiruts auf, und war in Fernsehprogrammen wie Bem Brasil zu sehen, einem historischen Programm, in dem alle großen Namen Brasiliens auftraten, von Hermeto Pascoal bis Caetano Veloso.<br><br>Im Jahr 2006 gründete er die Reggae-Rockband Bless Fya, die zur Hauptband für namhafte internationale Künstler wie Alpha Blonde, Gladiators und Groundation wurde, und Auszeichnungen als beste Band des Jahres und beste Neue Band erhielt. Im Jahr 2008 wurde er eingeladen, MC einer der bekanntesten Reggaebands Brasiliens, Maskavo, zu sein. Dort wurde eine neue Version von Julgados Culpados im Sound System-Stil geschaffen, und sie tourten vom Norden bis in den Süden Brasiliens und gaben in 2 Jahren über 250 Auftritte.<br><br>Im Jahr 2012 startete er das Projekt Mocadão, das ein Album mit internationalen Partnern wie Lion International (USA) und Blend Mishkin (GR) veröffentlichte und auf wichtigen Festivals wie der Virada Cultural in São Paulo und Raves im ganzen Südosten und Süden des Landes auftrat.<br><br>Im Jahr 2014 gründete er das Projekt MPReggae, in dem brasilianische Musikklassiker in Reggae-Versionen neu interpretiert wurden und auf wichtigen Festivals wie dem Universo Paralello im ganzen Brasilien auftraten.<br><br>Im Jahr 2016 schloss er sich der Gruppe Ciganos em Fuga an, die mit einer Tour im Sesc in São Paulo begann und dann eine dreimonatige Europatournee in 10 Ländern durchführte.<br><br>Im Jahr 2017 kehrte er mit Ciganos em Fuga nach Europa zurück und tourte weitere 3 Monate, und im Jahr 2019 zog er in die Schweiz. Zwischen Einzelausstellungen und Projekten wie \"Left and Right\" und \"Dom Lampa Trio\".<br><br><b>Dom Lampa präsentiert nun sein neues Projekt:<br>Lampa Sexta Feira, begleitet von den Musikern: <a href=\"https://instagram.com/marcolastella\" class=\"text-primary\" target=\"_blank\">Marco Lastella</a> (Bass) und <a href=\"https://instagram.com/daniel_bagutti\" class=\"text-primary\" target=\"_blank\">Daniel Bagutti </a>(Schlagzeug).</b><br></p>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_isUserblock": true,
+          "_cid": "tSKwHk2fvX",
+          "_anchor": "article12-h",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 1rem)",
+            "padding-bottom": "(@paddingBottom * 1rem)",
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            ".mbr-fallback-image.disabled": {
+              "display": "none"
+            },
+            ".mbr-fallback-image": {
+              "display": "block",
+              "background-size": "cover",
+              "background-position": "center center",
+              "width": "100%",
+              "height": "100%",
+              "position": "absolute",
+              "top": "0",
+              "& when (@bg-type = 'video')": {
+                "background-image": "url(@fallBackImage)"
+              }
+            },
+            "& when not (@spacing)": {
+              ".row": {
+                "margin-left": "0",
+                "margin-right": "0"
+              },
+              ".item": {
+                "padding-left": "0",
+                "padding-right": "0"
+              }
+            },
+            "& when (@spacing)": {
+              ".item": {
+                "margin-bottom": "2rem"
+              },
+              "@media (max-width: 767px)": {
+                ".item": {
+                  "margin-bottom": "1rem"
+                }
+              }
+            },
+            ".item-wrapper": {
+              "& when (@autoSize)": {
+                "& when not (@showItemSubtitle)": {
+                  "height": "100%"
+                },
+                "& when (@showItemSubtitle)": {
+                  "height": "(@imageHeight * 100px)"
+                },
+                "img": {
+                  "height": "100%",
+                  "object-fit": "cover"
+                }
+              },
+              "position": "relative",
+              ".icon-wrapper": {
+                "pointer-events": "none",
+                "position": "absolute",
+                "width": "60px",
+                "height": "60px",
+                "font-size": "22px",
+                "left": "50%",
+                "top": "50%",
+                "display": "flex",
+                "align-items": "center",
+                "justify-content": "center",
+                "border": "2px solid transparent",
+                "border-radius": "50%",
+                "opacity": "0",
+                "color": "#464845 !important",
+                "transform": "translateX(-50%) translateY(-50%)",
+                "background-color": "#edefea !important",
+                "transition": "0.2s"
+              },
+              "&:hover": {
+                ".icon-wrapper": {
+                  "opacity": "1"
+                }
+              }
+            },
+            ".carousel-control, .close": {
+              "background": "#1b1b1b"
+            },
+            ".carousel-control-prev": {
+              "margin-left": "2.5rem",
+              "span": {
+                "margin-right": "5px"
+              }
+            },
+            ".carousel-control-next": {
+              "margin-right": "2.5rem",
+              "span": {
+                "margin-left": "5px"
+              }
+            },
+            ".close": {
+              "position": "fixed",
+              "opacity": "0.5",
+              "font-size": "22px",
+              "font-weight": "300",
+              "width": "60px",
+              "height": "60px",
+              "border-radius": "50%",
+              "color": "#fff",
+              "top": "2.5rem",
+              "right": "2.5rem",
+              "border": "2px solid #fff",
+              "text-shadow": "none",
+              "z-index": "5",
+              "transition": "opacity 0.3s ease",
+              "font-family": "'Moririse2'",
+              "align-items": "center",
+              "justify-content": "center",
+              "display": "flex",
+              "&::before": {
+                "content": "'\\e91a'"
+              },
+              "&:hover": {
+                "opacity": "1",
+                "background": "#000",
+                "color": "#fff"
+              }
+            },
+            ".carousel-control": {
+              "display": "flex",
+              "top": "50%",
+              "width": "60px",
+              "height": "60px",
+              "margin-top": "-1.5rem",
+              "font-size": "22px",
+              "background-color": "rgba(0, 0, 0, 0.5)",
+              "border": "2px solid #fff",
+              "border-radius": "50%",
+              "transition": "all 0.3s",
+              "&.carousel-control-prev": {
+                "left": "0",
+                "margin-left": "2.5rem"
+              },
+              "&.carousel-control-next": {
+                "right": "0",
+                "margin-right": "2.5rem"
+              },
+              "@media (max-width: 767px)": {
+                "top": "auto",
+                "bottom": "1rem"
+              }
+            },
+            ".carousel-indicators": {
+              "position": "absolute",
+              "bottom": "0",
+              "margin-bottom": "3px",
+              "li": {
+                "max-width": "15px",
+                "height": "15px",
+                "width": "15px",
+                "max-height": "15px",
+                "margin": "3px",
+                "background-color": "rgba(0, 0, 0, 0.5)",
+                "border": "2px solid #fff",
+                "border-radius": "50%",
+                "opacity": "0.5",
+                "transition": "all 0.3s",
+                "&.active, &:hover": {
+                  "opacity": "0.9"
+                },
+                "&::after, &::before": {
+                  "content": "none"
+                }
+              },
+              "&.ie-fix": {
+                "left": "50%",
+                "display": "block",
+                "width": "60%",
+                "margin-left": "-30%",
+                "text-align": "center"
+              },
+              "@media (max-width: 768px)": {
+                "display": "none !important"
+              },
+              "@media (max-width: 991px)": {
+                "margin-bottom": "3.625rem !important",
+                "padding-left": "2.5rem",
+                "padding-right": "2.5rem"
+              },
+              "@media (max-width: 767px)": {
+                "display": "none"
+              }
+            },
+            ".carousel-inner": {
+              "display": "flex",
+              "align-items": "center"
+            },
+            ".carousel-inner > .active": {
+              "display": "block"
+            },
+            ".carousel-control.left": {
+              "left": "0",
+              "margin-left": "2.5rem"
+            },
+            ".carousel-control.right": {
+              "right": "0",
+              "margin-right": "2.5rem"
+            },
+            ".carousel-control:hover": {
+              "background": "#1b1b1b",
+              "color": "#fff",
+              "opacity": "1"
+            },
+            "@media (max-width: 768px)": {
+              ".carousel-control, .carousel-indicators, .modal .close": {
+                "position": "fixed"
+              }
+            },
+            "@media (max-width: 767px)": {
+              ".mbr-slider .carousel-control": {
+                "top": "auto",
+                "bottom": "20px"
+              },
+              ".mbr-slider > .container .carousel-control": {
+                "margin-bottom": "0"
+              }
+            },
+            ".carousel-indicators .active, .carousel-indicators li": {
+              "width": "7px",
+              "height": "7px",
+              "margin": "3px",
+              "background": "#000000",
+              "opacity": "0.5",
+              "border": "4px solid #000000"
+            },
+            ".carousel-indicators .active": {
+              "background": "#fff"
+            },
+            ".carousel-indicators li": {
+              "max-width": "15px",
+              "max-height": "15px",
+              "border-radius": "50%"
+            },
+            ".modal": {
+              "padding-left": "0 !important",
+              "position": "fixed",
+              "overflow": "hidden",
+              "padding-right": "0 !important"
+            },
+            ".modal-dialog": {
+              "margin": "0 auto",
+              "max-width": "100%",
+              "padding-left": "1rem",
+              "padding-right": "1rem"
+            },
+            ".modal-content": {
+              "border-radius": "0",
+              "border": "none",
+              "background": "transparent"
+            },
+            ".modal-body": {
+              "padding": "0",
+              "display": "flex",
+              "align-items": "center",
+              "img": {
+                "width": "100%",
+                "object-fit": "contain",
+                "max-height": "~\"calc(100vh - 1.75rem)\""
+              }
+            },
+            ".carousel": {
+              "width": "100%"
+            },
+            ".modal-backdrop.in": {
+              "opacity": "0.8"
+            },
+            ".modal.fade .modal-dialog": {
+              "transition": "margin-top 0.3s ease-out"
+            },
+            ".modal.fade .modal-dialog, .modal.in .modal-dialog": {
+              "transform": "none"
+            },
+            ".mbr-gallery .item-wrapper": {
+              "cursor": "pointer"
+            },
+            ".content-head": {
+              "max-width": "800px"
+            },
+            "H3": {
+              "color": "#ffffff"
+            },
+            "H4": {
+              "color": "#ffffff"
+            }
+          },
+          "_name": "gallery01",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"gallery1 mbr-gallery\" group=\"Gallery & Slider\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\">\n    <mbr-parameters>\n        <input type=\"id\" name=\"idGallery\">\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\" checked>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"6\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"6\">\n        <select title=\"Columns\" name=\"cardsWidth\">\n            <option value=\"12\">1</option>\n            <option value=\"6\">2</option>\n            <option value=\"4\">3</option>\n            <option value=\"3\" selected>4</option>\n        </select>\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\">\n        <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\">\n        <header>Images</header>\n        <input type=\"checkbox\" title=\"Auto Size\" name=\"autoSize\" checked>\n        <input type=\"range\" name=\"imageHeight\" title=\"Height\" min=\"1\" max=\"5\" step=\"1\" value=\"3\" condition=\"autoSize && showItemSubtitle\">\n        <input type=\"checkbox\" title=\"Spacing\" name=\"spacing\" checked>\n        <input type=\"checkbox\" title=\"Caption\" name=\"showItemSubtitle\">\n        <header>Popup Slider</header> \n        <input type=\"checkbox\" title=\"Fade Effect\" name=\"fade\">\n        <input type=\"checkbox\" title=\"Autoplay\" name=\"autoplay\">\n        <input type=\"range\" title=\"Interval\" name=\"interval\" min=\"3\" max=\"10\" value=\"5\" step=\"1\" condition=\"autoplay\">\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Image\" value=\"@PROJECT_PATH@/assets/images/lampa-11-960x640.jpg\" parallax selected>\n            <input type=\"color\" title=\"Color\" value=\"#edefeb\">\n            <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n        </fieldset>\n        <header condition=\"bg.type === 'video'\">Fallback Image</header>\n        <input type=\"image\" title=\"Fallback Image\" value=\"../_images/background1.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n        <header condition=\"bg.type!=='color'\">Overlay</header>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" checked condition=\"bg.type !== 'color'\">\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#000000\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.8\" condition=\"overlay && bg.type !== 'color'\">\n    </mbr-parameters>\n\n    <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n\n    <div mbr-class=\"{'container': !fullWidth,\n                    'container-fluid': fullWidth}\">\n        <div class=\"row justify-content-center\">\n            <div class=\"col-12 content-head\">\n                <div class=\"mb-5\" mbr-if=\"showTitle || showSubtitle\">\n                    <h3 class=\"mbr-section-title mbr-fonts-style align-center m-0\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\"><b>Media</b></h3>\n                    <h4 class=\"mbr-section-subtitle mbr-fonts-style align-center mb-0 mt-4\" mbr-theme-style=\"display-7\" mbr-if=\"showSubtitle\">Images with Captions</h4>\n                </div>\n            </div>\n        </div>\n        \n        <div class=\"row mbr-gallery\">\n            \n            \n            \n            \n            \n            \n            \n            <div class=\"col-12 col-md-6 col-lg-{{cardsWidth}} item gallery-image active\">\n                <div class=\"item-wrapper mb-3\" data-toggle=\"modal\" data-bs-toggle=\"modal\" data-target=\"#{{idGallery}}-modal\" data-bs-target=\"#{{idGallery}}-modal\">\n                    <img class=\"w-100\" src=\"@PROJECT_PATH@/assets/images/lampa-1-598x618.jpg\" alt=\"Mobirise Website Builder\" data-target=\"#lb-{{idGallery}}\" data-bs-target=\"#lb-{{idGallery}}\" data-slide-to=\"0\" data-bs-slide-to=\"0\">\n                    <div class=\"icon-wrapper\">\n                        <span class=\"mobi-mbri mobi-mbri-search mbr-iconfont mbr-iconfont-btn\"></span>\n                    </div>\n                </div>\n                <h6 class=\"mbr-item-subtitle mbr-fonts-style align-center mb-0 mt-3\" mbr-theme-style=\"display-7\" mbr-if=\"showItemSubtitle\">\n                    Image Caption and <a href=\"#\" class=\"text-primary\">Link</a>\n                </h6>\n            </div><div class=\"col-12 col-md-6 col-lg-{{cardsWidth}} item gallery-image active\">\n                <div class=\"item-wrapper mb-3\" data-toggle=\"modal\" data-bs-toggle=\"modal\" data-target=\"#{{idGallery}}-modal\" data-bs-target=\"#{{idGallery}}-modal\">\n                    <img class=\"w-100\" src=\"@PROJECT_PATH@/assets/images/lampa-3-6000x4000.jpg\" alt=\"Mobirise Website Builder\" data-target=\"#lb-{{idGallery}}\" data-bs-target=\"#lb-{{idGallery}}\" data-slide-to=\"2\" data-bs-slide-to=\"2\">\n                    <div class=\"icon-wrapper\">\n                        <span class=\"mobi-mbri mobi-mbri-search mbr-iconfont mbr-iconfont-btn\"></span>\n                    </div>\n                </div>\n                <h6 class=\"mbr-item-subtitle mbr-fonts-style align-center mb-0 mt-3\" mbr-theme-style=\"display-7\" mbr-if=\"showItemSubtitle\">\n                    Image Caption and <a href=\"#\" class=\"text-primary\">Link</a>\n                </h6>\n            </div><div class=\"col-12 col-md-6 col-lg-{{cardsWidth}} item gallery-image active\">\n                <div class=\"item-wrapper mb-3\" data-toggle=\"modal\" data-bs-toggle=\"modal\" data-target=\"#{{idGallery}}-modal\" data-bs-target=\"#{{idGallery}}-modal\">\n                    <img class=\"w-100\" src=\"@PROJECT_PATH@/assets/images/lampa-12-960x640.jpg\" alt=\"Mobirise Website Builder\" data-target=\"#lb-{{idGallery}}\" data-bs-target=\"#lb-{{idGallery}}\" data-slide-to=\"3\" data-bs-slide-to=\"3\">\n                    <div class=\"icon-wrapper\">\n                        <span class=\"mobi-mbri mobi-mbri-search mbr-iconfont mbr-iconfont-btn\"></span>\n                    </div>\n                </div>\n                <h6 class=\"mbr-item-subtitle mbr-fonts-style align-center mb-0 mt-3\" mbr-theme-style=\"display-7\" mbr-if=\"showItemSubtitle\">\n                    Image Caption and <a href=\"#\" class=\"text-primary\">Link</a>\n                </h6>\n            </div><div class=\"col-12 col-md-6 col-lg-{{cardsWidth}} item gallery-image active\">\n                <div class=\"item-wrapper mb-3\" data-toggle=\"modal\" data-bs-toggle=\"modal\" data-target=\"#{{idGallery}}-modal\" data-bs-target=\"#{{idGallery}}-modal\">\n                    <img class=\"w-100\" src=\"@PROJECT_PATH@/assets/images/lampa-12-960x639.jpg\" alt=\"Mobirise Website Builder\" data-target=\"#lb-{{idGallery}}\" data-bs-target=\"#lb-{{idGallery}}\" data-slide-to=\"4\" data-bs-slide-to=\"4\">\n                    <div class=\"icon-wrapper\">\n                        <span class=\"mobi-mbri mobi-mbri-search mbr-iconfont mbr-iconfont-btn\"></span>\n                    </div>\n                </div>\n                <h6 class=\"mbr-item-subtitle mbr-fonts-style align-center mb-0 mt-3\" mbr-theme-style=\"display-7\" mbr-if=\"showItemSubtitle\">\n                    Image Caption and <a href=\"#\" class=\"text-primary\">Link</a>\n                </h6>\n            </div><div class=\"col-12 col-md-6 col-lg-{{cardsWidth}} item gallery-image active\">\n                <div class=\"item-wrapper mb-3\" data-toggle=\"modal\" data-bs-toggle=\"modal\" data-target=\"#{{idGallery}}-modal\" data-bs-target=\"#{{idGallery}}-modal\">\n                    <img class=\"w-100\" src=\"@PROJECT_PATH@/assets/images/lampa-15-1024x959.jpg\" alt=\"Mobirise Website Builder\" data-target=\"#lb-{{idGallery}}\" data-bs-target=\"#lb-{{idGallery}}\" data-slide-to=\"5\" data-bs-slide-to=\"5\">\n                    <div class=\"icon-wrapper\">\n                        <span class=\"mobi-mbri mobi-mbri-search mbr-iconfont mbr-iconfont-btn\"></span>\n                    </div>\n                </div>\n                <h6 class=\"mbr-item-subtitle mbr-fonts-style align-center mb-0 mt-3\" mbr-theme-style=\"display-7\" mbr-if=\"showItemSubtitle\">\n                    Image Caption and <a href=\"#\" class=\"text-primary\">Link</a>\n                </h6>\n            </div><div class=\"col-12 col-md-6 col-lg-{{cardsWidth}} item gallery-image active\">\n                <div class=\"item-wrapper mb-3\" data-toggle=\"modal\" data-bs-toggle=\"modal\" data-target=\"#{{idGallery}}-modal\" data-bs-target=\"#{{idGallery}}-modal\">\n                    <img class=\"w-100\" src=\"@PROJECT_PATH@/assets/images/lampa-17-2136x3204.jpg\" alt=\"Mobirise Website Builder\" data-target=\"#lb-{{idGallery}}\" data-bs-target=\"#lb-{{idGallery}}\" data-slide-to=\"6\" data-bs-slide-to=\"6\">\n                    <div class=\"icon-wrapper\">\n                        <span class=\"mobi-mbri mobi-mbri-search mbr-iconfont mbr-iconfont-btn\"></span>\n                    </div>\n                </div>\n                <h6 class=\"mbr-item-subtitle mbr-fonts-style align-center mb-0 mt-3\" mbr-theme-style=\"display-7\" mbr-if=\"showItemSubtitle\">\n                    Image Caption and <a href=\"#\" class=\"text-primary\">Link</a>\n                </h6>\n            </div><div class=\"col-12 col-md-6 col-lg-{{cardsWidth}} item gallery-image active\">\n                <div class=\"item-wrapper mb-3\" data-toggle=\"modal\" data-bs-toggle=\"modal\" data-target=\"#{{idGallery}}-modal\" data-bs-target=\"#{{idGallery}}-modal\">\n                    <img class=\"w-100\" src=\"@PROJECT_PATH@/assets/images/lampa-19-5040x3360.jpg\" alt=\"Mobirise Website Builder\" data-target=\"#lb-{{idGallery}}\" data-bs-target=\"#lb-{{idGallery}}\" data-slide-to=\"7\" data-bs-slide-to=\"7\">\n                    <div class=\"icon-wrapper\">\n                        <span class=\"mobi-mbri mobi-mbri-search mbr-iconfont mbr-iconfont-btn\"></span>\n                    </div>\n                </div>\n                <h6 class=\"mbr-item-subtitle mbr-fonts-style align-center mb-0 mt-3\" mbr-theme-style=\"display-7\" mbr-if=\"showItemSubtitle\">\n                    Image Caption and <a href=\"#\" class=\"text-primary\">Link</a>\n                </h6>\n            </div><div class=\"col-12 col-md-6 col-lg-{{cardsWidth}} item gallery-image active\">\n                <div class=\"item-wrapper mb-3\" data-toggle=\"modal\" data-bs-toggle=\"modal\" data-target=\"#{{idGallery}}-modal\" data-bs-target=\"#{{idGallery}}-modal\">\n                    <img class=\"w-100\" src=\"@PROJECT_PATH@/assets/images/lampa-22-5040x3360.jpg\" alt=\"Mobirise Website Builder\" data-target=\"#lb-{{idGallery}}\" data-bs-target=\"#lb-{{idGallery}}\" data-slide-to=\"8\" data-bs-slide-to=\"8\">\n                    <div class=\"icon-wrapper\">\n                        <span class=\"mobi-mbri mobi-mbri-search mbr-iconfont mbr-iconfont-btn\"></span>\n                    </div>\n                </div>\n                <h6 class=\"mbr-item-subtitle mbr-fonts-style align-center mb-0 mt-3\" mbr-theme-style=\"display-7\" mbr-if=\"showItemSubtitle\">\n                    Image Caption and <a href=\"#\" class=\"text-primary\">Link</a>\n                </h6>\n            </div>\n        </div>\n\n        <div class=\"modal mbr-slider\" id=\"{{idGallery}}-modal\" tabindex=\"-1\" role=\"dialog\" aria-hidden=\"true\">\n            <div class=\"modal-dialog\" role=\"document\">\n                <div class=\"modal-content\">\n                    <div class=\"modal-body\">\n                        <div id=\"lb-{{idGallery}}\" class=\"carousel slide\" data-pause=\"false\" data-bs-pause=\"false\" mbr-class=\"{'carousel-fade': fade}\" data-ride=\"{{autoplay ? 'carousel' : false}}\" data-bs-ride=\"{{autoplay ? 'carousel' : false}}\" data-interval=\"{{interval*1000}}\" data-bs-interval=\"{{interval*1000}}\">\n                            <div class=\"carousel-inner\">\n                                \n                                \n                                \n                                \n                                \n                                \n                                \n                                <div class=\"carousel-item active\">\n                                    <img class=\"d-block w-100\" src=\"../_images/gallery/gallery07.jpg\" alt=\"Mobirise Website Builder\">\n                                </div><div class=\"carousel-item\">\n                                    <img class=\"d-block w-100\" src=\"@PROJECT_PATH@/assets/images/lampa-3-6000x4000.jpg\" alt=\"Mobirise Website Builder\">\n                                </div><div class=\"carousel-item\">\n                                    <img class=\"d-block w-100\" src=\"@PROJECT_PATH@/assets/images/lampa-12-960x640.jpg\" alt=\"Mobirise Website Builder\">\n                                </div><div class=\"carousel-item\">\n                                    <img class=\"d-block w-100\" src=\"@PROJECT_PATH@/assets/images/lampa-12-960x639.jpg\" alt=\"Mobirise Website Builder\">\n                                </div><div class=\"carousel-item\">\n                                    <img class=\"d-block w-100\" src=\"@PROJECT_PATH@/assets/images/lampa-15-1024x959.jpg\" alt=\"Mobirise Website Builder\">\n                                </div><div class=\"carousel-item\">\n                                    <img class=\"d-block w-100\" src=\"@PROJECT_PATH@/assets/images/lampa-17-2136x3204.jpg\" alt=\"Mobirise Website Builder\">\n                                </div><div class=\"carousel-item\">\n                                    <img class=\"d-block w-100\" src=\"@PROJECT_PATH@/assets/images/lampa-19-5040x3360.jpg\" alt=\"Mobirise Website Builder\">\n                                </div><div class=\"carousel-item\">\n                                    <img class=\"d-block w-100\" src=\"@PROJECT_PATH@/assets/images/lampa-22-5040x3360.jpg\" alt=\"Mobirise Website Builder\">\n                                </div>\n                            </div>\n                            <ol class=\"carousel-indicators\">\n                                <li data-target=\"#lb-{{idGallery}}\" data-bs-target=\"#lb-{{idGallery}}\" data-slide-to=\"0\" data-bs-slide-to=\"0\" class=\"active\"></li><li data-target=\"#lb-{{idGallery}}\" data-bs-target=\"#lb-{{idGallery}}\" data-slide-to=\"1\" data-bs-slide-to=\"1\" class></li><li data-target=\"#lb-{{idGallery}}\" data-bs-target=\"#lb-{{idGallery}}\" data-slide-to=\"2\" data-bs-slide-to=\"2\" class></li><li data-target=\"#lb-{{idGallery}}\" data-bs-target=\"#lb-{{idGallery}}\" data-slide-to=\"3\" data-bs-slide-to=\"3\" class></li><li data-target=\"#lb-{{idGallery}}\" data-bs-target=\"#lb-{{idGallery}}\" data-slide-to=\"4\" data-bs-slide-to=\"4\" class></li><li data-target=\"#lb-{{idGallery}}\" data-bs-target=\"#lb-{{idGallery}}\" data-slide-to=\"5\" data-bs-slide-to=\"5\" class></li><li data-target=\"#lb-{{idGallery}}\" data-bs-target=\"#lb-{{idGallery}}\" data-slide-to=\"6\" data-bs-slide-to=\"6\" class></li><li data-target=\"#lb-{{idGallery}}\" data-bs-target=\"#lb-{{idGallery}}\" data-slide-to=\"7\" data-bs-slide-to=\"7\" class></li>\n                                \n                                \n                                \n                                \n                                \n                                \n                                \n                            </ol>\n                            <a role=\"button\" href class=\"close\" data-dismiss=\"modal\" data-bs-dismiss=\"modal\" aria-label=\"Close\">\n                            </a>\n                            <a class=\"carousel-control-prev carousel-control\" href=\"#lb-{{idGallery}}\" role=\"button\" data-slide=\"prev\" data-bs-slide=\"prev\">\n                                <span class=\"mobi-mbri mobi-mbri-arrow-prev\" aria-hidden=\"true\"></span>\n                                <span class=\"sr-only visually-hidden\">Previous</span>\n                            </a>\n                            <a class=\"carousel-control-next carousel-control\" href=\"#lb-{{idGallery}}\" role=\"button\" data-slide=\"next\" data-bs-slide=\"next\">\n                                <span class=\"mobi-mbri mobi-mbri-arrow-next\" aria-hidden=\"true\"></span>\n                                <span class=\"sr-only visually-hidden\">Next</span>\n                            </a>\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "tSKwHkJDhN",
+          "_anchor": "gallery01-i",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 1rem)",
+            "padding-bottom": "(@paddingBottom * 1rem)",
+            "background-color": "@bgColor",
+            "& when (@reverseContent)": {
+              ".row": {
+                "flex-direction": "row-reverse"
+              }
+            },
+            ".mbr-text": {
+              "color": "#ffffff"
+            },
+            ".mbr-section-subtitle": {
+              "color": "#ffffff"
+            }
+          },
+          "_name": "article15",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"article15\" group=\"Article\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n        <input type=\"checkbox\" name=\"reverseContent\" title=\"Reverse\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"5\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"5\">\n        <input type=\"range\" name=\"textWidth\" title=\"Width\" min=\"4\" max=\"8\" value=\"6\" step=\"1\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\">\n        <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\" checked>\n        <header>Background</header>\n        <input type=\"color\" title=\"Color\" name=\"bgColor\" value=\"#0d0d0d\">\n    </mbr-parameters>\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"row justify-content-center\">\n            <div class=\"col-12 col-md\">\n                <h5 class=\"mbr-section-title mbr-fonts-style mt-0 mb-4\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\" mbr-theme-style=\"display-2\">\n                <b>Photography as Narrative</b>\n                </h5>\n                <h6 class=\"mbr-section-subtitle mbr-fonts-style mt-0 mb-4\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>Veranstaltungen und Festivals</b></h6>\n            </div>\n            <div class=\"col-md-12 col-lg-{{textWidth}}\">\n                <p class=\"mbr-text mbr-fonts-style mt-0 mb-0\" data-app-selector=\".mbr-text\" mbr-theme-style=\"display-7\">BRASILIEN<br>Universo Paralello, Mundo de Oz, Soulvision, Circo Voador, SESC (BR), Serasgum Festival, Mix Fm Festival, Virada Cultural Sp, Festival Paulista de Circo, Yo Mtv Raps Live, Bem Brasil Tv Cultura Live.<br><br>SCHWEIZ<br>Long Lake Festival, Festa della Musica, Locarno Film Festival, Grin Festival, Festa in Valle.<br><br>ITALIEN<br>Imaginaria Festival, Sarnico Busker Festival, Santa Sofia Busker Festival, FiuminArte Festival, I Paesi dei Balocchi Festival, Veregra Street Festival.<br><br>BASKENLAND, VIGO, SPANIEN<br>Ama Terra, Posidonia Festival, Antzotegi Kultur Egarriz // NIEDERLANDE:<br>Onderstroom, Terras de Kaaij, Open Up Festival // ÖSTERREICH<br>Gauklertestival // POLEN Pniewy Festival // DÄNEMARK<br>Gademusik Festival // MEXIKO Df Festival // GRIECHENLAND Matala Beach Festival Madirie<br></p>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "tSKwHnjWUN",
+          "_anchor": "article15-j",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 1rem)",
+            "padding-bottom": "(@paddingBottom * 1rem)",
+            "background-color": "@bgColor"
+          },
+          "_name": "article16",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"article16\" group=\"Article\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"2\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"3\">\n        <input type=\"range\" name=\"textWidth\" title=\"Width\" min=\"4\" max=\"12\" value=\"10\" step=\"1\">\n        <header>Background</header>\n        <input type=\"color\" title=\"Color\" name=\"bgColor\" value=\"#232323\">\n    </mbr-parameters>\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"row justify-content-center\">\n            <div class=\"col-md-12 col-lg-{{textWidth}}\">\n                <div class=\"mbr-section-btn align-center\" mbr-buttons mbr-theme-style=\"display-4\" data-toolbar=\"-mbrBtnMove\"><a class=\"btn btn-danger\" href=\"https://drive.google.com/drive/folders/1-J6ZRVomowSEFU5mCc129gKwVauUQTuR?usp=sharing\" data-app-placeholder=\"Type Text\" target=\"_blank\"><span class=\"mobi-mbri mobi-mbri-download mbr-iconfont mbr-iconfont-btn\"></span>Laden Sie das Media Kit herunter</a></div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "tSKwHnx2iK",
+          "_anchor": "article16-k",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 1rem)",
+            "padding-bottom": "(@paddingBottom * 1rem)",
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            ".mbr-fallback-image.disabled": {
+              "display": "none"
+            },
+            ".mbr-fallback-image": {
+              "display": "block",
+              "background-size": "cover",
+              "background-position": "center center",
+              "width": "100%",
+              "height": "100%",
+              "position": "absolute",
+              "top": "0",
+              "& when (@bg-type = 'video')": {
+                "background-image": "url(@fallBackImage)"
+              }
+            },
+            ".item-wrapper": {
+              "display": "flex",
+              "margin-bottom": "2rem",
+              "border-radius": "0 !important",
+              "@media (max-width: 767px)": {
+                "margin-bottom": "1rem"
+              }
+            },
+            ".mbr-iconfont": {
+              "font-size": "3rem",
+              "color": "@iconColor",
+              "padding-right": "2rem"
+            },
+            ".content-head": {
+              "max-width": "800px"
+            },
+            ".mbr-section-title": {
+              "color": "#ffffff"
+            },
+            ".card-title": {
+              "color": "#ffffff"
+            },
+            ".card-text": {
+              "color": "#ffffff"
+            }
+          },
+          "_name": "social02",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"social02\" group=\"Social\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\">\n\t<mbr-parameters>\n\t\t<header>Size</header>\n\t\t<input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n\t\t<input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"3\">\n\t\t<input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"1\">\n\t\t<header>Show/Hide</header>\n\t\t<input type=\"checkbox\" title=\"Title\" name=\"showmainTitle\" checked>\n\t\t<input type=\"checkbox\" title=\"Subtitle\" name=\"showmainSubtitle\">\n\t\t<header>Cards</header>\n\t\t<input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n\t\t<input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n\t\t<input type=\"checkbox\" title=\"Icons\" name=\"showIcon\" checked>\n\t\t<input type=\"color\" title=\"Color\" name=\"iconColor\" value=\"#ffffff\" selected condition=\"showIcon\">\n\t\t<select title=\"Columns\" name=\"columns\">\n\t\t\t<option value=\"12\">1</option>\n\t\t\t<option value=\"6\">2</option>\n\t\t\t<option value=\"4\" selected>3</option>\n\t\t\t<option value=\"3\">4</option>\n\t\t</select>\n\t\t<header>Background</header>\n\t\t<fieldset type=\"background\" name=\"bg\" parallax>\n\t\t\t<input type=\"image\" title=\"Image\" value=\"../_images/background1.jpg\">\n\t\t\t<input type=\"color\" title=\"Color\" value=\"#000000\" selected>\n\t\t\t<input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n\t\t</fieldset>\n\t\t<header condition=\"bg.type === 'video'\">Fallback Image</header>\n\t\t<input type=\"image\" title=\"Fallback Image\" value=\"../_images/background1.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n\t\t<input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n\t\t<input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n\t\t<input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.5\" condition=\"overlay && bg.type !== 'color'\">\n\t</mbr-parameters>\n\n\t<div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n\t<div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\"></div>\n\t<div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n\t\t<div class=\"row justify-content-center\">\n\t\t\t<div class=\"col-12 content-head\">\n\t\t\t\t<div class=\"mb-5\" mbr-if=\"showmainTitle || showmainSubtitle\">\n\t\t\t\t\t<h5 class=\"mbr-section-title mbr-fonts-style align-center mb-0\" mbr-theme-style=\"display-2\" mbr-if=\"showmainTitle\" data-app-selector=\".mbr-section-title\"><b>Social Media</b></h5>\n\t\t\t\t\t<h6 class=\"mbr-section-subtitle mbr-fonts-style align-center mb-0 mt-4\" mbr-theme-style=\"display-7\" mbr-if=\"showmainSubtitle\" data-app-selector=\".mbr-section-subtitle\">\n\t\t\t\t\t\tFollow us\n\t\t\t\t\t</h6>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t</div>\n\t\t<div class=\"row\">\n\t\t\t<div class=\"item features-without-image col-12 col-md-6 col-lg-{{columns}} active\">\n\t\t\t\t<div class=\"item-wrapper\">\n\t\t\t\t\t<span mbr-icon class=\"mbr-iconfont m-auto socicon-instagram socicon\" mbr-if=\"showIcon\"></span>\n\t\t\t\t\t<div class=\"card-box\">\n\t\t\t\t\t\t<h4 class=\"card-title mbr-fonts-style mb-1\" mbr-theme-style=\"display-7\" mbr-if=\"showTitle\" data-app-selector=\".card-title\">\n\t\t\t\t\t\t\t<b>Instagram</b>\n\t\t\t\t\t\t</h4>\n\t\t\t\t\t\t<h5 class=\"card-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".card-text\">\n\t\t\t\t\t\t\t<a href=\"https://instagram.com/domlampa\" class=\"text-primary\" target=\"_blank\">@domlampa</a></h5>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t\t\n\t\t\t\n\t\t\t<div class=\"item features-without-image col-12 col-md-6 col-lg-{{columns}}\">\n\t\t\t\t<div class=\"item-wrapper\">\n\t\t\t\t\t<span mbr-icon class=\"mbr-iconfont m-auto socicon-youtube socicon\" mbr-if=\"showIcon\"></span>\n\t\t\t\t\t<div class=\"card-box\">\n\t\t\t\t\t\t<h4 class=\"card-title mbr-fonts-style mb-1\" mbr-theme-style=\"display-7\" mbr-if=\"showTitle\" data-app-selector=\".card-title\">\n\t\t\t\t\t\t\t<b>YouTube</b>\n\t\t\t\t\t\t</h4>\n\t\t\t\t\t\t<h5 class=\"card-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".card-text\">\n\t\t\t\t\t\t\t<a href=\"https://www.youtube.com/@domlampa9740\" class=\"text-primary\" target=\"_blank\">Dom Lampa</a></h5>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t\t<div class=\"item features-without-image col-12 col-md-6 col-lg-{{columns}}\">\n\t\t\t\t<div class=\"item-wrapper\">\n\t\t\t\t\t<span mbr-icon class=\"mbr-iconfont m-auto mbri-website-theme\" mbr-if=\"showIcon\"></span>\n\t\t\t\t\t<div class=\"card-box\">\n\t\t\t\t\t\t<h4 class=\"card-title mbr-fonts-style mb-1\" mbr-theme-style=\"display-7\" mbr-if=\"showTitle\" data-app-selector=\".card-title\">\n\t\t\t\t\t\t\t<b>Website</b></h4>\n\t\t\t\t\t\t<h5 class=\"card-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".card-text\">\n\t\t\t\t\t\t\t<a href=\"https://domlampa.com\" class=\"text-primary\" target=\"_blank\">domlampa.com</a></h5>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t\t\n\t\t</div>\n\t</div>\n</section>",
+          "_cid": "tSKwHnLR1a",
+          "_anchor": "social02-l",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 1rem)",
+            "padding-bottom": "(@paddingBottom * 1rem)",
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            ".mbr-fallback-image.disabled": {
+              "display": "none"
+            },
+            ".mbr-fallback-image": {
+              "display": "block",
+              "background-size": "cover",
+              "background-position": "center center",
+              "width": "100%",
+              "height": "100%",
+              "position": "absolute",
+              "top": "0",
+              "& when (@bg-type = 'video')": {
+                "background-image": "url(@fallBackImage)"
+              }
+            },
+            ".row": {
+              "justify-content": "center"
+            },
+            ".item": {
+              "margin-bottom": "2rem",
+              "@media (max-width: 767px)": {
+                "margin-bottom": "1rem"
+              },
+              ".item-wrapper": {
+                "display": "flex",
+                "flex-direction": "column",
+                "height": "100%",
+                "background": "@cardsBg",
+                "@media (max-width: 991px)": {
+                  "padding": "2rem 1.5rem"
+                },
+                "@media (min-width: 992px)": {
+                  "padding": "2.25rem"
+                }
+              }
+            },
+            ".content-head": {
+              "max-width": "800px"
+            },
+            ".mbr-section-title": {
+              "color": "#ffffff"
+            },
+            ".card-title": {
+              "color": "#ffffff"
+            },
+            "P": {
+              "color": "#ffffff"
+            }
+          },
+          "_name": "contacts01",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"contacts01\" group=\"Contacts\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\" checked>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"4\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"6\">\n        <select title=\"Columns\" name=\"cardsWidth\">\n\t\t\t<option value=\"6\" selected>2</option>\n\t\t\t<option value=\"4\">3</option>\n\t\t\t<option value=\"3\">4</option>\n\t\t</select>\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\">\n        <header>Cards</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitleCards\" checked>\n        <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n        <input type=\"color\" title=\"BG\" name=\"cardsBg\" value=\"#232323\">\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Image\" value=\"../_images/background1.jpg\" parallax>\n            <input type=\"color\" title=\"Color\" value=\"#0d0d0d\" selected>\n            <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n        </fieldset>\n        <header condition=\"bg.type === 'video'\">Fallback Image</header>\n        <input type=\"image\" title=\"Fallback Image\" value=\"../_images/background1.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" checked condition=\"bg.type !== 'color'\">\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#cebfaf\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.5\" condition=\"overlay && bg.type !== 'color'\">\n    </mbr-parameters>\n\n    <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"row justify-content-center\">\n            <div class=\"col-12 content-head\">\n                <div class=\"mbr-section-head mb-5\" mbr-if=\"showTitle || showSubtitle\">\n                    <h3 class=\"mbr-section-title mbr-fonts-style align-center mb-0\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\">\n                        <b>Kontaktinformationen</b></h3>\n                    <h4 class=\"mbr-section-subtitle mbr-fonts-style align-center mb-0 mt-4\" mbr-theme-style=\"display-7\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\">\n                        Contacts Subtitle\n                    </h4>\n                </div>\n            </div>\n        </div>\n        <div class=\"row\">\n            <div class=\"item features-without-image col-12 col-md-{{cardsWidth}} active\">\n                <div class=\"item-wrapper\">\n                    <div class=\"text-wrapper\">\n                        <h6 class=\"card-title mbr-fonts-style mb-3\" mbr-theme-style=\"display-5\" data-app-selector=\".card-title\" mbr-if=\"showTitleCards\">\n                            <b>Telefonnummer</b></h6>\n                        <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\"><a href=\"https://wa.me/44 77 494 65 34\" class=\"text-primary\">+44 77 494 65 34</a></p>\n                    </div>\n                </div>\n            </div>\n            <div class=\"item features-without-image col-12 col-md-{{cardsWidth}}\">\n                <div class=\"item-wrapper\">\n                    <div class=\"text-wrapper\">\n                        <h6 class=\"card-title mbr-fonts-style mb-3\" mbr-theme-style=\"display-5\" data-app-selector=\".card-title\" mbr-if=\"showTitleCards\">\n                            <b>Email</b>\n                        </h6>\n                        <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\"><a href=\"mailto:dom.lampa.music@gmail.com\" class=\"text-primary\">dom.lampa.music@gmail.com</a></p>\n                    </div>\n                </div>\n            </div>\n            <div class=\"item features-without-image col-12 col-md-{{cardsWidth}}\">\n                <div class=\"item-wrapper\">\n                    <div class=\"text-wrapper\">\n                        <h6 class=\"card-title mbr-fonts-style mb-3\" mbr-theme-style=\"display-5\" data-app-selector=\".card-title\" mbr-if=\"showTitleCards\">\n                            <b>Location</b></h6>\n                        <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\">\n                            Lugano, TI - Schweiz (CH)</p>\n                    </div>\n                </div>\n            </div>\n            <div class=\"item features-without-image col-12 col-md-{{cardsWidth}}\">\n                <div class=\"item-wrapper\">\n                    <div class=\"text-wrapper\">\n                        <h6 class=\"card-title mbr-fonts-style mb-3\" mbr-theme-style=\"display-5\" data-app-selector=\".card-title\" mbr-if=\"showTitleCards\"><b>Work Hours</b></h6>\n                        <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\">10:00 - 18:00\n                        </p>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "tSKwHpjyyP",
+          "_anchor": "contacts01-m",
           "_protectedParams": [],
           "_global": false,
           "_once": false,
