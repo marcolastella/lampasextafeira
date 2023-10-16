@@ -728,51 +728,29 @@ body {
 a {
   transition: color 0.6s;
 }
-.cid-tSHzaG2DAj {
-  display: flex;
-  padding-top: 0px;
-  padding-bottom: 0px;
-  background-image: url("../../../assets/images/lampa-21.webp");
+.cid-tSQXvlnLCw {
+  padding-top: 3rem;
+  padding-bottom: 1rem;
 }
-.cid-tSHzaG2DAj .mbr-overlay {
-  background-color: #000000;
-  opacity: 0.7;
+.cid-tSQXvlnLCw .mbr-fallback-image.disabled {
+  display: none;
 }
-.cid-tSHzaG2DAj .content-wrap {
-  padding: 5rem 1rem;
+.cid-tSQXvlnLCw .mbr-fallback-image {
+  display: block;
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  background-image: url("../../../assets/images/lampa-11-960x640.webp");
 }
-@media (min-width: 768px) {
-  .cid-tSHzaG2DAj {
-    align-items: center;
-  }
-  .cid-tSHzaG2DAj .row {
-    justify-content: center;
-  }
+.cid-tSQXvlnLCw .content-head {
+  max-width: 800px;
 }
-@media (max-width: 991px) and (min-width: 768px) {
-  .cid-tSHzaG2DAj .content-wrap {
-    min-width: 50%;
-  }
-}
-@media (max-width: 767px) {
-  .cid-tSHzaG2DAj {
-    -webkit-align-items: center;
-    align-items: center;
-  }
-  .cid-tSHzaG2DAj .mbr-row {
-    -webkit-justify-content: center;
-    justify-content: center;
-  }
-  .cid-tSHzaG2DAj .content-wrap {
-    width: 100%;
-  }
-}
-.cid-tSHzaG2DAj .mbr-section-title {
-  text-align: center;
-}
-.cid-tSHzaG2DAj .mbr-text,
-.cid-tSHzaG2DAj .mbr-section-btn {
-  text-align: center;
+.cid-tSQXvlnLCw .mbr-text,
+.cid-tSQXvlnLCw .mbr-section-btn {
+  color: #f7f7f7;
 }
 .cid-tSHCKPG06g {
   padding-top: 6rem;
