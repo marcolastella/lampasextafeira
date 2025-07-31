@@ -63,7 +63,7 @@
     "screenshot": "screenshot.png",
     "usedWebp": true,
     "favicon": "@PROJECT_PATH@/assets/images/lampa-favicon-128x128.png",
-    "mbrsiteDomain": "3vioi8tnip",
+    "mbrsiteDomain": "pqp4rnndnf",
     "robotsSwitcher": false,
     "sitemapSwitcher": false,
     "sitemapSwitcherAuto": false,
@@ -72,7 +72,7 @@
     "gdpr": false,
     "publishChangesOnly": true,
     "publishEditFolder": true,
-    "witsec-white-label": false
+    "witsec-white-label": true
   },
   "pages": {
     "index.html": {
