@@ -36,32 +36,27 @@
   </header>
 
   <main>
-    <!-- HERO -->
+    <!-- HERO: la foto del palco scorre più lenta del testo -->
     <section class="hero" aria-label="Lampa Sexta Feira">
-      <img class="hero__photo" src="assets/img/hero-dom-lampa.webp" alt="Dom Lampa sul palco della Rotonda di Locarno con le braccia alzate">
-      <div class="hero__inner">
+      <div class="hero__media" data-parallax="0.35">
+        <img class="hero__photo" src="assets/img/hero-dom-lampa.webp" alt="Dom Lampa sul palco della Rotonda di Locarno con le braccia alzate">
+      </div>
+      <div class="hero__inner" data-fade>
         <h1 class="hero__logo">
           <span class="hero__mark" id="hero-logo" aria-hidden="true"><img src="assets/logo.svg" alt=""></span>
           <span class="sr">Lampa Sexta Feira</span>
         </h1>
-        <div class="hero__side">
-          <p class="hero__tag">reggae brasiliano, raggamuffin e jungle. da são paulo al ticino.</p>
+        <div class="hero__text">
+          <p class="hero__tag">Reggae brasiliano, raggamuffin e jungle. Da São Paulo al Ticino.</p>
           <div class="hero__cta">
             <a class="btn btn--solid" href="#live">Date live</a>
             <a class="btn" href="#album">Ascolta Zuei Domingo</a>
           </div>
-          <p class="hero__next" id="next-show" hidden></p>
         </div>
+        <p class="hero__next" id="next-show" hidden></p>
       </div>
+      <a class="hero__scroll" href="#live" aria-label="Scorri alle date">Scorri</a>
     </section>
-
-    <!-- TICKER -->
-    <div class="ticker-wrap" aria-hidden="true"><div class="ticker">
-      <div class="ticker__track">
-        <span>reggae brasiliano</span><i></i><span>raggamuffin</span><i></i><span>jungle</span><i></i><span>samba</span><i></i><span>dub</span><i></i><span>forró</span><i></i><span>drum &amp; bass</span><i></i>
-        <span>reggae brasiliano</span><i></i><span>raggamuffin</span><i></i><span>jungle</span><i></i><span>samba</span><i></i><span>dub</span><i></i><span>forró</span><i></i><span>drum &amp; bass</span><i></i>
-      </div>
-    </div></div>
 
     <!-- DATE LIVE -->
     <section class="live" id="live" aria-labelledby="live-title">
@@ -81,6 +76,21 @@
 
         <h3 class="sub">dove abbiamo suonato</h3>
         <div id="archive" class="archive"></div>
+      </div>
+    </section>
+
+    <!-- PAUSA "DUB DELAY": la frase torna in eco, sempre più lontana -->
+    <section class="echo" aria-label="toda sexta é dia de reggae">
+      <div class="echo__media" data-parallax="0.22">
+        <img src="assets/img/live-rotonda-folla.webp" alt="Il palco della Rotonda di Locarno visto da dietro, con il pubblico" loading="lazy">
+      </div>
+      <div class="echo__text">
+        <p class="echo__line">
+          <span class="echo__voice">toda sexta é dia de reggae</span>
+          <span class="echo__tail echo__tail--1" aria-hidden="true" data-parallax="0.16">toda sexta é dia de reggae</span>
+          <span class="echo__tail echo__tail--2" aria-hidden="true" data-parallax="0.32">toda sexta é dia de reggae</span>
+        </p>
+        <p class="echo__cap">Rotonda by la Mobiliare, Locarno Film Festival 2024</p>
       </div>
     </section>
 
@@ -107,17 +117,17 @@
           <p class="sec-head__note">Ritmo, energia e storie da raccontare. Dal reggae alla roots music brasiliana, con jungle e drum &amp; bass sotto i piedi.</p>
         </header>
         <ul class="members">
-          <li class="member">
+          <li class="member" data-parallax="-0.04">
             <img src="assets/img/trio-dom-lampa.webp" alt="Dom Lampa canta e suona la chitarra acustica" loading="lazy">
             <p class="member__name">dom lampa</p>
             <p class="member__role">Voce e chitarra</p>
           </li>
-          <li class="member">
+          <li class="member" data-parallax="0.06">
             <img src="assets/img/trio-marco-lastella.webp" alt="Marco Lastella al basso e ai cori" loading="lazy">
             <p class="member__name">marco lastella</p>
             <p class="member__role">Basso e cori</p>
           </li>
-          <li class="member">
+          <li class="member" data-parallax="-0.01">
             <img src="assets/img/trio-daniele-bagutti.webp" alt="Daniele Bagutti alla batteria" loading="lazy">
             <p class="member__name">daniele bagutti</p>
             <p class="member__role">Batteria ed effetti</p>
@@ -172,6 +182,21 @@
       </div>
     </section>
 
+    <!-- PAUSA "DUB DELAY": la frase torna in eco, sempre più lontana -->
+    <section class="echo" aria-label="porta il sound system">
+      <div class="echo__media" data-parallax="0.22">
+        <img src="assets/img/live-rotonda-palco.webp" alt="Il trio sul palco della Rotonda con il nome della band sullo schermo" loading="lazy">
+      </div>
+      <div class="echo__text">
+        <p class="echo__line">
+          <span class="echo__voice">porta il sound system</span>
+          <span class="echo__tail echo__tail--1" aria-hidden="true" data-parallax="0.16">porta il sound system</span>
+          <span class="echo__tail echo__tail--2" aria-hidden="true" data-parallax="0.32">porta il sound system</span>
+        </p>
+        <p class="echo__cap">Booking per festival, club e feste</p>
+      </div>
+    </section>
+
     <!-- BOOKING -->
     <section class="booking" id="booking" aria-labelledby="booking-title">
       <div class="wrap">
@@ -198,5 +223,6 @@
   </footer>
 
   <script type="module" src="js/main.js"></script>
+  <script type="module" src="js/parallax.js"></script>
 </body>
 </html>
