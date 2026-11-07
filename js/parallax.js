@@ -1,5 +1,6 @@
 // Parallax "dub delay": ogni livello arriva con il suo ritardo, come le ripetizioni di un'eco.
 // data-parallax="0.2" → l'elemento si sposta del 20% della sua distanza dal centro dello schermo.
+// data-max="110" → spostamento massimo in pixel.
 // data-fade → sfuma mentre si scorre via dall'hero.
 
 const reduce = matchMedia('(prefers-reduced-motion: reduce)');
@@ -15,7 +16,9 @@ function update() {
     const box = el.parentElement.getBoundingClientRect();
     if (box.bottom < -vh * 0.5 || box.top > vh * 1.5) continue; // fuori schermo: niente lavoro
     const fromCenter = box.top + box.height / 2 - vh / 2;
-    const y = -fromCenter * parseFloat(el.dataset.parallax) * scale;
+    let y = -fromCenter * parseFloat(el.dataset.parallax) * scale;
+    const max = parseFloat(el.dataset.max); // tetto allo spostamento (le eco non si allontanano troppo)
+    if (max) y = Math.max(-max * scale, Math.min(max * scale, y));
     el.style.transform = `translate3d(0, ${y.toFixed(1)}px, 0)`;
   }
   for (const el of fades) {

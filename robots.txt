@@ -1,0 +1,5 @@
+# Lampa Sexta Feira: tutti i motori di ricerca e gli assistenti AI sono benvenuti.
+User-agent: *
+Allow: /
+
+Sitemap: https://lampasextafeira.com/sitemap.xml

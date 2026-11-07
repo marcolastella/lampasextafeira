@@ -23,6 +23,17 @@ Ogni membro della band può crearsene una, oppure Marco ne crea una e la condivi
 
 La chiave può modificare solo questo repository. Se va persa basta revocarla su GitHub e crearne una nuova.
 
+## Contatti mostrati sul sito
+
+Email `lampasextafeira@gmail.com`, WhatsApp e telefono `+41 77 494 65 34`. Se cambiano, aggiornali in `index.html` (dati strutturati, booking, footer) e in `llms.txt`.
+
+## Ricerca e anteprime
+
+- `index.html` contiene titolo, descrizione, anteprime per WhatsApp e social (`assets/og.jpg`, 1200×630) e i dati strutturati schema.org (band, membri, album, contatti).
+- `llms.txt` è la scheda della band per gli assistenti AI. `sitemap.xml` e `robots.txt` sono per i motori di ricerca.
+- L'archivio concerti è anche scritto in HTML statico, per chi non esegue JavaScript. Dopo aver aggiunto molte date puoi aggiornarlo con `node tools/prerender.mjs` (facoltativo: il sito mostra comunque sempre i dati aggiornati).
+- Dopo la pubblicazione conviene aggiungere il sito a Google Search Console e inviare `https://lampasextafeira.com/sitemap.xml`.
+
 ## Struttura
 
 | Percorso | Cosa contiene |
