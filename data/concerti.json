@@ -1,0 +1,13 @@
+[
+  { "id": "2025-05-01-snack-bar-viale", "data": "2025-05-01", "ora": "", "titolo": "", "luogo": "Snack Bar Viale", "citta": "Bellinzona", "indirizzo": "", "descrizione": "", "foto": "", "biglietti": "", "prezzo": "", "stato": "confermato" },
+  { "id": "2025-02-14-studio-foce", "data": "2025-02-14", "ora": "", "titolo": "", "luogo": "Studio Foce", "citta": "Lugano", "indirizzo": "", "descrizione": "", "foto": "", "biglietti": "", "prezzo": "", "stato": "confermato" },
+  { "id": "2024-08-15-teatro-paravento", "data": "2024-08-15", "ora": "", "titolo": "", "luogo": "Teatro Paravento", "citta": "Locarno", "indirizzo": "", "descrizione": "", "foto": "", "biglietti": "", "prezzo": "", "stato": "confermato" },
+  { "id": "2024-08-09-locarno-film-festival", "data": "2024-08-09", "ora": "", "titolo": "Locarno Film Festival", "luogo": "Rotonda by la Mobiliare", "citta": "Locarno", "indirizzo": "", "descrizione": "", "foto": "", "biglietti": "", "prezzo": "", "stato": "confermato" },
+  { "id": "2024-07-15-punta-foce", "data": "2024-07-15", "ora": "", "titolo": "", "luogo": "Punta Foce", "citta": "Lugano", "indirizzo": "", "descrizione": "", "foto": "", "biglietti": "", "prezzo": "", "stato": "confermato" },
+  { "id": "2024-07-13-vezio", "data": "2024-07-13", "ora": "", "titolo": "", "luogo": "Vezio", "citta": "Alto Malcantone", "indirizzo": "", "descrizione": "", "foto": "", "biglietti": "", "prezzo": "", "stato": "confermato" },
+  { "id": "2024-05-11-maglio-del-malcantone", "data": "2024-05-11", "ora": "", "titolo": "", "luogo": "Maglio del Malcantone", "citta": "Miglieglia", "indirizzo": "", "descrizione": "", "foto": "", "biglietti": "", "prezzo": "", "stato": "confermato" },
+  { "id": "2024-02-03-teatro-di-banco", "data": "2024-02-03", "ora": "", "titolo": "", "luogo": "Teatro di Banco", "citta": "Bedigliora", "indirizzo": "", "descrizione": "", "foto": "", "biglietti": "", "prezzo": "", "stato": "confermato" },
+  { "id": "2023-12-09-foce", "data": "2023-12-09", "ora": "", "titolo": "", "luogo": "FOCE", "citta": "Lugano", "indirizzo": "", "descrizione": "", "foto": "", "biglietti": "", "prezzo": "", "stato": "confermato" },
+  { "id": "2023-11-09-osteria-vignetta", "data": "2023-11-09", "ora": "", "titolo": "", "luogo": "Osteria Vignetta", "citta": "Chiasso", "indirizzo": "", "descrizione": "", "foto": "", "biglietti": "", "prezzo": "", "stato": "confermato" },
+  { "id": "2023-10-31-la-buttiga", "data": "2023-10-31", "ora": "", "titolo": "", "luogo": "La Buttiga Beer Room", "citta": "Milano", "indirizzo": "", "descrizione": "", "foto": "", "biglietti": "", "prezzo": "", "stato": "confermato" }
+]

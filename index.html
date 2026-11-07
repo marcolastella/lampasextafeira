@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lampa Sexta Feira — reggae brasiliano dal Ticino</title>
+  <meta name="description" content="Lampa Sexta Feira: trio di reggae brasiliano di Lugano. Dom Lampa, Marco Lastella e Daniele Bagutti. Concerti, musica e booking.">
+  <meta property="og:title" content="Lampa Sexta Feira">
+  <meta property="og:description" content="Reggae brasiliano, raggamuffin e jungle da São Paulo al Ticino.">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#FFD23F">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="assets/fonts/alfa-slab-one-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip" href="#concerti">Vai ai concerti</a>
+
+  <header class="topbar">
+    <a class="topbar__logo" href="#top" aria-label="Lampa Sexta Feira, torna su">LSF</a>
+    <nav class="topbar__nav" aria-label="Sezioni">
+      <a href="#concerti">Concerti</a>
+      <a href="#storia">Storia</a>
+      <a href="#musica">Musica</a>
+      <a href="#booking">Booking</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <!-- HERO: manifesto lambe-lambe -->
+    <section class="hero" aria-labelledby="hero-title">
+      <svg class="hero__sun" viewBox="0 0 600 600" aria-hidden="true">
+        <path class="sun-rays" d="M600.0,300.0 L474.3,315.3 L551.1,344.3 L469.0,345.3 L581.9,402.6 L458.6,374.0 L520.8,427.5 L443.4,400.4 L529.8,492.8 L423.7,423.7 L463.9,495.3 L400.4,443.4 L450.0,559.8 L374.0,458.6 L387.2,539.6 L345.3,469.0 L352.1,595.4 L315.3,474.3 L300.0,555.0 L284.7,474.3 L247.9,595.4 L254.7,469.0 L212.8,539.6 L226.0,458.6 L150.0,559.8 L199.6,443.4 L136.1,495.3 L176.3,423.7 L70.2,492.8 L156.6,400.4 L79.2,427.5 L141.4,374.0 L18.1,402.6 L131.0,345.3 L48.9,344.3 L125.7,315.3 L0.0,300.0 L125.7,284.7 L48.9,255.7 L131.0,254.7 L18.1,197.4 L141.4,226.0 L79.2,172.5 L156.6,199.6 L70.2,107.2 L176.3,176.3 L136.1,104.7 L199.6,156.6 L150.0,40.2 L226.0,141.4 L212.8,60.4 L254.7,131.0 L247.9,4.6 L284.7,125.7 L300.0,45.0 L315.3,125.7 L352.1,4.6 L345.3,131.0 L387.2,60.4 L374.0,141.4 L450.0,40.2 L400.4,156.6 L463.9,104.7 L423.7,176.3 L529.8,107.2 L443.4,199.6 L520.8,172.5 L458.6,226.0 L581.9,197.4 L469.0,254.7 L551.1,255.7 L474.3,284.7Z"/>
+        <circle class="sun-ring" cx="300" cy="300" r="150"/>
+        <circle class="sun-core" cx="300" cy="300" r="122"/>
+      </svg>
+
+      <h1 id="hero-title" class="hero__title">
+        <span class="print" data-text="Lampa">Lampa</span>
+        <span class="print" data-text="Sexta">Sexta</span>
+        <span class="print" data-text="Feira">Feira</span>
+      </h1>
+
+      <p class="hero__tag">Reggae brasiliano, raggamuffin e jungle.<br>Da São Paulo al Ticino.</p>
+
+      <a class="hero__strip" id="next-show" href="#concerti">
+        <span class="strip__label">Prossimo concerto</span>
+        <span class="strip__info" id="next-show-info">Calendario in aggiornamento</span>
+      </a>
+    </section>
+
+    <!-- CONCERTI -->
+    <section class="concerti" id="concerti" aria-labelledby="concerti-title">
+      <div class="wrap">
+        <h2 id="concerti-title" class="h-section">Concerti</h2>
+        <div class="posters" id="upcoming" aria-live="polite">
+          <p class="empty">Stiamo preparando le prossime date. Scrivi a <a href="mailto:booking@lampasextafeira.com">booking@lampasextafeira.com</a> per portarci nel tuo locale.</p>
+        </div>
+
+        <details class="archive" id="archive-box">
+          <summary><span>Dove abbiamo suonato</span> <span class="archive__count" id="archive-count"></span></summary>
+          <div id="archive"></div>
+        </details>
+      </div>
+    </section>
+
+    <!-- STORIA -->
+    <section class="storia" id="storia" aria-labelledby="storia-title">
+      <div class="wrap">
+        <h2 id="storia-title" class="h-section">Da São Paulo<br>a Lugano</h2>
+        <p class="lead">Dom Lampa è cresciuto nella periferia di São Paulo, dove il rap, il reggae e il sound system si mescolano sullo stesso marciapiede. Trent'anni dopo quel suono è arrivato in Ticino.</p>
+
+        <ol class="timeline">
+          <li><span class="tl__year">1997</span><p>Primi passi nel rap con i Julgados Culpados, nella scena underground di São Paulo.</p></li>
+          <li><span class="tl__year">Usina Reggae</span><p>Il passaggio al reggae e il successo con “A Mulher e o Lago”, diventato un classico del reggae brasiliano.</p></li>
+          <li><span class="tl__year">2002</span><p>Un album con gli Orbitais, tour in tutto il Brasile accanto a nomi come i Natiruts, e le prime apparizioni in TV.</p></li>
+          <li><span class="tl__year">2006</span><p>Fonda i Bless Fya, reggae-rock che apre i concerti di artisti reggae internazionali.</p></li>
+          <li><span class="tl__year">2008</span><p>Diventa MC dei Maskavo e riporta in vita i Julgados Culpados come sound system.</p></li>
+          <li><span class="tl__year">2012–2014</span><p>Nascono Mocadão e MPReggae, che rilegge i classici della musica brasiliana a tempo di reggae.</p></li>
+          <li><span class="tl__year">2016–2017</span><p>In tour per l'Europa con i Ciganos em Fuga.</p></li>
+          <li><span class="tl__year">2019</span><p>Si trasferisce in Svizzera: progetti solisti, “Left and Right” e il Dom Lampa Trio.</p></li>
+          <li><span class="tl__year">Oggi</span><p>Con Marco Lastella al basso e Daniele Bagutti alla batteria nasce Lampa Sexta Feira.</p></li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- BAND -->
+    <section class="band" aria-labelledby="band-title">
+      <div class="wrap">
+        <h2 id="band-title" class="h-section">Il trio</h2>
+        <ul class="members">
+          <li class="member member--red">
+            <span class="member__name">Dom Lampa</span>
+            <span class="member__role">Voce e chitarra acustica</span>
+          </li>
+          <li class="member member--blue">
+            <span class="member__name">Marco Lastella</span>
+            <span class="member__role">Basso e cori. Ha anche mixato e masterizzato l'album</span>
+          </li>
+          <li class="member member--green">
+            <span class="member__name">Daniele Bagutti</span>
+            <span class="member__role">Batteria</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- MUSICA -->
+    <section class="musica" id="musica" aria-labelledby="musica-title">
+      <div class="wrap musica__grid">
+        <div>
+          <h2 id="musica-title" class="h-section">Zuei Domingo</h2>
+          <p class="lead">Il nostro album di debutto, uscito il 9 agosto 2025. Reggae brasiliano e raggamuffin che incontrano drum &amp; bass e jungle, con dentro funk, samba e forró. Critica sociale, ironia e spiritualità: la musica come modo per stare insieme.</p>
+          <ol class="tracks">
+            <li>Eu Vou</li><li>Nego</li><li>Moio</li><li>Zuei Domingo</li>
+            <li>Fè</li><li>No Bad Vibes</li><li>Boom Biddy Bye Bless</li><li>123</li>
+          </ol>
+          <a class="btn" href="https://lampasextafeira.bandcamp.com/album/zuei-domingo" target="_blank" rel="noopener">Ascolta su Bandcamp</a>
+        </div>
+        <div class="player">
+          <iframe title="Zuei Domingo su Bandcamp" loading="lazy"
+            src="https://bandcamp.com/EmbeddedPlayer/album=4293694474/size=large/bgcol=ffffff/linkcol=e2332b/tracklist=true/transparent=true/"
+            seamless></iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- GALLERIA (dalle foto dei concerti) -->
+    <section class="galleria" id="galleria" aria-labelledby="galleria-title" hidden>
+      <div class="wrap">
+        <h2 id="galleria-title" class="h-section">Dal palco</h2>
+        <div class="gallery" id="gallery"></div>
+      </div>
+    </section>
+
+    <!-- BOOKING -->
+    <section class="booking" id="booking" aria-labelledby="booking-title">
+      <div class="wrap">
+        <h2 id="booking-title" class="h-section">Portaci a suonare</h2>
+        <p class="lead">Locali, festival, feste private. Scrivici date e luogo e ti rispondiamo noi.</p>
+        <a class="booking__mail" href="mailto:booking@lampasextafeira.com">booking@lampasextafeira.com</a>
+        <ul class="links">
+          <li><a href="https://lampasextafeira.bandcamp.com" target="_blank" rel="noopener">Bandcamp</a></li>
+          <li><a href="https://mx3.ch/lampasextafeira" target="_blank" rel="noopener">Mx3</a></li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>Lampa Sexta Feira, Lugano</p>
+    <p>Toda sexta é dia de reggae.</p>
+  </footer>
+
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>

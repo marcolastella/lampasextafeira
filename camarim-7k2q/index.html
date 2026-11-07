@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Camarim · Lampa Sexta Feira</title>
+  <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="../assets/fonts/alfa-slab-one-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="../css/fonts.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="admin.css">
+</head>
+<body class="admin">
+  <header class="a-top">
+    <h1>Camarim</h1>
+    <p>Il backstage di Lampa Sexta Feira. Quello che salvi qui va online da solo sul sito.</p>
+    <nav class="a-top__nav">
+      <a href="../" target="_blank" rel="noopener">Apri il sito</a>
+      <button type="button" class="a-link" id="logout" hidden>Esci</button>
+    </nav>
+  </header>
+
+  <!-- 1. Accesso -->
+  <section class="a-card" id="login" hidden>
+    <h2>Entra</h2>
+    <p>Incolla la chiave di accesso GitHub della band. Viene salvata solo su questo dispositivo.</p>
+    <form id="login-form">
+      <label for="token">Chiave di accesso</label>
+      <input id="token" type="password" autocomplete="off" required placeholder="github_pat_…">
+      <button class="a-btn" type="submit">Entra</button>
+      <p class="a-error" id="login-error" role="alert"></p>
+    </form>
+    <details class="a-help">
+      <summary>Come si crea la chiave</summary>
+      <ol>
+        <li>Su GitHub, vai su Settings › Developer settings › Personal access tokens › Fine-grained tokens › Generate new token.</li>
+        <li>In “Repository access” scegli “Only select repositories” e seleziona <b>lampasextafeira</b>.</li>
+        <li>In “Permissions › Repository permissions” imposta <b>Contents</b> su <b>Read and write</b>.</li>
+        <li>Scegli una scadenza (anche 1 anno), genera e copia la chiave qui sopra.</li>
+      </ol>
+    </details>
+  </section>
+
+  <!-- 2. Elenco -->
+  <section class="a-wrap" id="list-view" hidden>
+    <div class="a-bar">
+      <h2>Concerti</h2>
+      <button class="a-btn" type="button" id="new-btn">Aggiungi concerto</button>
+    </div>
+    <h3 class="a-sub">In arrivo</h3>
+    <ul class="a-list" id="list-upcoming"></ul>
+    <h3 class="a-sub">Passati</h3>
+    <ul class="a-list" id="list-past"></ul>
+  </section>
+
+  <!-- 3. Modulo -->
+  <section class="a-wrap" id="form-view" hidden>
+    <div class="a-bar">
+      <h2 id="form-title">Nuovo concerto</h2>
+      <button class="a-link" type="button" id="cancel-btn">Torna all'elenco</button>
+    </div>
+
+    <div class="a-split">
+      <form id="event-form" class="a-card a-form" novalidate>
+        <div class="a-row">
+          <div><label for="f-data">Data *</label><input id="f-data" name="data" type="date" required></div>
+          <div><label for="f-ora">Ora</label><input id="f-ora" name="ora" type="time"></div>
+        </div>
+        <label for="f-luogo">Locale *</label>
+        <input id="f-luogo" name="luogo" required placeholder="Studio Foce">
+        <div class="a-row">
+          <div><label for="f-citta">Città *</label><input id="f-citta" name="citta" required placeholder="Lugano"></div>
+          <div><label for="f-indirizzo">Indirizzo</label><input id="f-indirizzo" name="indirizzo" placeholder="Via Foce 1"></div>
+        </div>
+        <label for="f-titolo">Nome dell'evento</label>
+        <input id="f-titolo" name="titolo" placeholder="Festival, rassegna, festa… (facoltativo)">
+        <label for="f-descrizione">Descrizione</label>
+        <textarea id="f-descrizione" name="descrizione" rows="4" placeholder="Cosa succede, chi suona con noi, info utili"></textarea>
+        <div class="a-row">
+          <div><label for="f-prezzo">Prezzo</label><input id="f-prezzo" name="prezzo" placeholder="Entrata libera / CHF 15"></div>
+          <div><label for="f-stato">Stato</label>
+            <select id="f-stato" name="stato">
+              <option value="confermato">Confermato</option>
+              <option value="soldout">Sold out</option>
+              <option value="annullato">Annullato</option>
+            </select>
+          </div>
+        </div>
+        <label for="f-biglietti">Link biglietti o evento</label>
+        <input id="f-biglietti" name="biglietti" type="url" placeholder="https://…">
+
+        <label for="f-foto">Foto o locandina</label>
+        <div class="a-photo">
+          <img id="photo-preview" alt="" hidden>
+          <input id="f-foto" type="file" accept="image/*">
+          <button type="button" class="a-link" id="photo-remove" hidden>Togli la foto</button>
+        </div>
+        <p class="a-hint">La foto viene ridimensionata in automatico. Sul sito appare stampata nei colori del manifesto.</p>
+
+        <div class="a-actions">
+          <button class="a-btn" type="submit" id="save-btn">Pubblica concerto</button>
+          <button class="a-btn a-btn--danger" type="button" id="delete-btn" hidden>Elimina concerto</button>
+        </div>
+        <p class="a-error" id="form-error" role="alert"></p>
+      </form>
+
+      <div class="a-preview">
+        <p class="a-sub">Anteprima sul sito</p>
+        <div class="concerti a-preview__wall"><div class="posters" id="preview"></div></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="a-toast" id="toast" role="status" aria-live="polite" hidden></div>
+
+  <script type="module" src="admin.js"></script>
+</body>
+</html>
